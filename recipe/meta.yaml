@@ -1,4 +1,4 @@
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 
 package:
   name: xarray-extras
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/x/xarray-extras/xarray_extras-{{ version }}.tar.gz
-  sha256: b73dc3ee40fdf38c5576383c40a5890d1010e346b72e8cf8f20cf7e8b66f19c8
+  sha256: 45db2041e00581c912e92cdb071c93af025e2a3d49d0fbf6cd697dae3b690c41
 
 build:
   noarch: python
@@ -22,9 +22,9 @@ requirements:
     - dask >=0.17.3
     - numba >=0.34
     - numpy >=1.13
-    - pandas >=0.20
-    - scipy >=1.0
-    - xarray >=0.10
+    - pandas >=0.20.2
+    - scipy >=1.0.0
+    - xarray >=0.10.0
 
 test:
   imports:
