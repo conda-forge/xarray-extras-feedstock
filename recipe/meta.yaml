@@ -26,18 +26,18 @@ requirements:
     - numpy >=1.13
     - pandas >=0.20.2
     - scipy >=1.0.0
-    - xarray >=0.10.0
+    - xarray >=0.10.1
 
 test:
   imports:
     - xarray_extras
   requires:
-    - pytest >=3.1
+    - pytest >=3.6
 
 about:
   home: https://github.com/crusaderky/xarray_extras
-  license: LGPL-3.0
-  license_family: LGPL
+  license: Apache-2
+  license_family: Apache
   license_file: LICENSE
   summary: 'Advanced / experimental extensions to xarray'
 
