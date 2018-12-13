@@ -1,4 +1,4 @@
-{% set version = "0.2.2" %}
+{% set version = "0.3.0" %}
 
 package:
   name: xarray-extras
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/x/xarray-extras/xarray_extras-{{ version }}.tar.gz
-  sha256: f3e93f4a37f29b4c596494deb1912aea3ae39d8afce0f7c931e5d3c568de785e
+  sha256: 64c32a12f552ebed1bb8e121b5ecd95fa9d267b78bcb7ab3a5922c5c975a7383
 
 build:
   number: 1000
@@ -26,18 +26,18 @@ requirements:
     - numpy >=1.13
     - pandas >=0.20.2
     - scipy >=1.0.0
-    - xarray >=0.10.0
+    - xarray >=0.10.1
 
 test:
   imports:
     - xarray_extras
   requires:
-    - pytest >=3.1
+    - pytest >=3.6
 
 about:
   home: https://github.com/crusaderky/xarray_extras
-  license: LGPL-3.0
-  license_family: LGPL
+  license: Apache-2
+  license_family: Apache
   license_file: LICENSE
   summary: 'Advanced / experimental extensions to xarray'
 
