@@ -9,7 +9,7 @@ source:
   sha256: 64c32a12f552ebed1bb8e121b5ecd95fa9d267b78bcb7ab3a5922c5c975a7383
 
 build:
-  number: 1000
+  number: 1001
   script: python -m pip install --no-deps --ignore-installed .
   skip: true  # [py27]
 
@@ -21,11 +21,11 @@ requirements:
     - pip
   run:
     - python
-    - dask >=0.17.3
+    - dask >=0.19
     - numba >=0.34
     - numpy >=1.13
-    - pandas >=0.20.2
-    - scipy >=1.0.0
+    - pandas >=0.21
+    - scipy >=1.0
     - xarray >=0.10.1
 
 test:
