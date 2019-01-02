@@ -1,4 +1,4 @@
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: xarray-extras
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/x/xarray-extras/xarray_extras-{{ version }}.tar.gz
-  sha256: 64c32a12f552ebed1bb8e121b5ecd95fa9d267b78bcb7ab3a5922c5c975a7383
+  sha256: d2afd23a6f6d2bb59f1b2117459a2a861984d4aaa8373a3248d7e18b57565f76
 
 build:
-  number: 1001
+  number: 1000
   script: python -m pip install --no-deps --ignore-installed .
   skip: true  # [py27]
 
