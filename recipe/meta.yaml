@@ -11,7 +11,7 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  skip: true  # [py27]
+  skip: true  # [py>=37]
 
 requirements:
   build:
@@ -36,7 +36,7 @@ test:
 
 about:
   home: https://github.com/crusaderky/xarray_extras
-  license: Apache-2
+  license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
   summary: 'Advanced / experimental extensions to xarray'
