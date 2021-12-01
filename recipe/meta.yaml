@@ -1,4 +1,4 @@
-{% set version = "0.4.2" %}
+{% set version = "0.5.0" %}
 
 package:
   name: xarray-extras
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/x/xarray-extras/xarray_extras-{{ version }}.tar.gz
-  sha256: f458174d2adc66a947dbee6929242f56c1afa5a1c507b982d5ec4f4ee7e31e69
+  sha256: b4164811606e20d7d9cd3c55d4d28803b00fb0d5c9a34fce185472527deb6509
 
 build:
-  number: 1000
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   skip: true  # [py27]
 
@@ -21,18 +21,18 @@ requirements:
     - pip
   run:
     - python
-    - dask >=0.19
-    - numba >=0.34
-    - numpy >=1.13
-    - pandas >=0.21
-    - scipy >=1.0
-    - xarray >=0.10.1
+    - dask >=2021.4
+    - numba >=0.52
+    - numpy >=1.18
+    - pandas >=1.1
+    - scipy >=1.5
+    - xarray >=0.16
 
 test:
   imports:
     - xarray_extras
   requires:
-    - pytest >=3.6
+    - pytest
 
 about:
   home: https://github.com/crusaderky/xarray_extras
