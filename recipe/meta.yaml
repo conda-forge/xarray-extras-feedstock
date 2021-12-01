@@ -17,9 +17,12 @@ requirements:
     - {{ compiler('c') }}
   host:
     - python
+    - setuptools
+    - setuptools-scm
     - pip
   run:
     - python
+    - setuptools
     - dask >=2021.4
     - numba >=0.52
     - numpy >=1.18
